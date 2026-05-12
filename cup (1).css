@@ -1,0 +1,2330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.team-image{
+    width: 80px;
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
+}
+.team-name {
+    margin: 5px;
+    color: #b0afaf;
+    font-size: 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+.team-image-cup {
+    width: 30px;
+    height: 66px;
+}
+.team-DIV{
+width: 250px;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    /* Centriranje horizontalno */
+    align-items: center;
+    /* Centriranje vertikalno */
+}
+
+
+header {
+    padding: 20px;
+    background: #f2f2f2;
+    position: static;
+    top: 0;
+    width: 100%;
+}
+.main-hede {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.Title{
+    color: #b0afaf;
+    font-size: 40px;
+}
+ul {
+    display: flex;
+    list-style: none;
+}
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+}
+.nav ul button {
+    margin-right: 10px;
+}
+nav li {
+    padding: 5px 10px;
+    border: none;
+    display: inline-block;
+    padding: 5px;
+    transition: all linear 0.5s;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: 500;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    
+    width: 100%;
+    background: rgb(56, 55, 55);
+    position: fixed;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 101;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    z-index: 9999;
+}
+.container_svih_timova {
+    background: rgba(186, 189, 192, 0.37);
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-gap: 5px;
+    margin-top: 80px;
+    
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    perspective: 10000px;
+}
+.container_all_of_Grup {
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-top: 50px;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    background: rgba(186, 189, 192, 0.37);
+    height: 1100px;
+}
+.container_tim_grupe_F {
+    position: relative;
+    border-radius: 10px;
+    width: 140px;
+    height: 100px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    margin: 10px;
+}
+.container_tim_grupe_F:hover {
+    transition: 0.5s;
+    -webkit-box-shadow: 5px 25px 46px -16px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 5px 25px 46px -16px rgba(0, 0, 0, 0.48);
+    box-shadow: 5px 25px 46px -16px rgba(24, 21, 4, 0.423);
+}
+.container_tim_grupe_F:active {
+    box-shadow: 5px 25px 46px -16px rgba(141, 13, 13, 0.172);
+    transition: 0.5s;
+}
+.container_tim_grupe_F.flip {
+
+    transform: rotateY(180deg);
+    box-shadow: rgba(0, 0, 0, 0.552) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.container_tim_grupe_F.flip:hover {
+    transform: rotateY(180deg);
+    box-shadow: 5px 20px 40px -16px rgba(30, 28, 28, 0.797);
+}
+#front_face {
+    border-radius: 5px;
+    position: absolute;
+    width: 150px;
+    border: 0.5px solid rgba(251, 244, 244, 0.909);
+    background-size: cover;
+    backface-visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+#back_face {
+
+    z-index: 1;
+    padding-top: 35px;
+    border-radius: 5px;
+    position: absolute;
+    background-size: cover;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(251, 250, 247);
+    font-weight: 500;
+    background: rgb(200, 187, 4);
+    height: 100px;
+    width: 100%;
+}
+
+.btn{
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container_of_all_grup {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-top: 50px;
+    grid-gap: 20px;
+    width: 2100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    
+    
+}
+.containet_of_Grup {
+    position: relative;
+    display: block;
+    flex-direction: column;
+    width: 400px;
+    height: 440px;
+    border: 1px solid rgb(200, 187, 4);
+    border-radius: 10px;
+    background: rgba(165, 165, 164, 0.374);
+    transition: 0.5s;
+}
+.containet_of_Grup:hover {
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    opacity: 1;
+    background: rgba(160, 159, 155, 0.794);
+}
+.container_tims_of_grup {
+    position: absolute;
+    display: grid;
+    flex-direction: auto;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.name_of_grup_button{
+    display: inline;
+
+    height: 50px;
+    border-radius: 5px;
+    background: rgb(254, 5, 5);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 10px;
+    width: 100px;
+    margin-top: 10px;
+
+}
+
+.name_of_grup_button::after {
+    content: '';
+        display: block;
+        width: 300px;
+        /* Širina linije ispod naslova */
+        border-bottom: 5px solid rgb(255, 254, 254);
+        /* Debljina 40 piksela, crna linija ispod naslova */
+        position: absolute;
+        top: 69px;
+        /* Udaljenost od donje ivice naslova */
+        left: 50%;
+        /* Postavljanje na polovinu roditeljskog elementa */
+        transform: translateX(-50%);
+        /* Centriranje prema širini elementa */
+}
+.name_of_grup_osmina {
+    display: inline;
+    border-bottom: black;
+    background: rgb(255, 225, 0);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.red {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    height: 70px;
+    margin: 10px;
+    transition: 0.3s;
+    float: left;
+    border: 1px solid red;
+    
+    border-radius: 10px;
+
+}
+.blue {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    height: 70px;
+    margin: 10px;
+    transition: 0.3s;
+    float: left;
+    
+    border-radius: 10px;
+    border: 1px solid rgb(234, 255, 0);
+
+}
+.container_of_tim {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    height: 70px;
+    margin: 10px;
+    transition: 0.3s;
+    float: left;
+}
+.container_of_tim:hover {
+    background: white;
+    border-radius: 10px;
+    box-shadow: rgba(250, 250, 252, 0.25) 0px 30px 60px -12px inset, rgba(232, 210, 210, 0.3) 0px 18px 36px -18px inset;
+}
+.container_of_tim_red:hover {
+    background: white;
+    border-radius: 10px;
+    box-shadow: rgba(250, 250, 252, 0.25) 0px 30px 60px -12px inset, rgba(232, 210, 210, 0.3) 0px 18px 36px -18px inset;
+}
+.container_of_tim_blue:hover {
+    background: white;
+    border-radius: 10px;
+    box-shadow: rgba(250, 250, 252, 0.25) 0px 30px 60px -12px inset, rgba(232, 210, 210, 0.3) 0px 18px 36px -18px inset;
+}
+#tim_grup_img {
+    position: absolute;
+    width: 80px;
+    background-size: cover;
+    margin-bottom: 5px;
+    transition: 0.1s;
+    margin: 30px;
+}
+#tim_grup_img:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+#tim_grup_slovo {
+    position: absolute;
+    display: block;
+    left: 145px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+#tim_grup_slovo span {
+    font-weight: 600;
+    font-size: 30px;
+    color: brown;
+}
+#tim_img_ball {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 50px;
+    right: 40px;
+    background-size: cover;
+    background-image: url("Image of tim/ball.png");
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+
+.container-tim-players {
+    position: absolute;
+    
+    /* Postavljamo container-tim-players kao flex kontejner */
+    display: flex;
+    /* Stavljamo elemente jedan ispod drugog */
+    flex-direction: column;
+    /* Dodajemo razmak između elemenata */
+    gap: 10px;
+    background: #f4eeda;
+    z-index: 99;
+    width: 100%;
+    
+}
+.button_category{
+    top: 50px;
+    transform: translate(50%, -50%);
+    font-size: 16px;
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    transition: font-size 0.3s ease;
+    right: 20px;
+    height: 60px;
+    width: 5%;
+    left: 51.5%;
+    
+}
+.button_category:hover {
+    background: #a60606;
+
+}
+
+
+
+.container-goalkeeper{
+    display: grid;
+    /* Definišemo grid sa četiri kolone */
+    grid-template-columns: repeat(4, 1fr);
+    /* Dodajemo razmak između slika */
+    gap: 10px;
+    
+    
+    
+    
+}
+.container-defender {
+    display: grid;
+    /* Definišemo grid sa četiri kolone */
+    grid-template-columns: repeat(4, 1fr);
+    /* Dodajemo razmak između slika */
+    gap: 10px;
+
+    
+    
+
+}
+
+
+.container-forward{
+        
+        display: grid;
+        /* Definišemo grid sa četiri kolone */
+        grid-template-columns: repeat(4, 1fr);
+        /* Dodajemo razmak između slika */
+        gap: 10px;
+
+    }
+.container-midfielder{
+
+        display: grid;
+        /* Definišemo grid sa četiri kolone */
+        grid-template-columns: repeat(4, 1fr);
+        /* Dodajemo razmak između slika */
+        gap: 10px;
+
+    }
+.container-manager {
+
+    display: grid;
+        /* Definišemo grid sa četiri kolone */
+    grid-template-columns: repeat(4, 1fr);
+        /* Dodajemo razmak između slika */
+    gap: 10px;
+    
+        
+}
+
+.container-tim-players img,
+.container-goalkeeper img,
+.container-defender img,
+.container-forward img,
+.container-midfielder img,
+.container-manage img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+}
+.tim{
+    display: flex;
+    
+    color: #fff;
+    font-size: 50px;
+    font-weight: 900;
+    background: rebeccapurple;
+    height: 100px;
+}
+
+.img-flag{
+
+    position: relative;
+    top: 0px;
+    left: 21.5%;
+    width: 130px;
+}
+
+.p-ime{
+    position: relative;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    top: 10px;
+    left: 25%;
+}
+
+
+
+
+.goalkeeper,
+.defender,
+.forward,
+.midfielder,
+.manager {
+    display: block;
+    border: 2px solid rgb(200, 187, 4);
+    border-radius: 10px;
+    background: #f7f7f7;
+    margin: 50px;
+    text-align: center;
+    
+}
+
+
+.flagImage{
+    width: 40px;
+    background-size: cover;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    display: block;
+    border :1px solid rgb(200, 187, 4);
+}
+.category_players{
+    display: inline-block;
+    padding: 10px;
+    border-top: 1px solid #e1ca0b;
+    width: 300px;
+    font-size: 13px;
+    font-weight: 400;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container_of_result {
+    position: absolute;
+    display: grid;
+    height: 65px;
+    width: 90px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    right: 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: #ffffff;
+    background: red;
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+button:hover {
+    background-color: #af0505;
+}
+
+button:active {
+    background-color: #893636;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
+.finale {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.osmina {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.left_top {
+    display: flex;
+    flex-direction: column;
+}
+
+.div {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container_all_of_Grup_osmina_bodovi {
+    display: flex;
+    position: relative;
+}
+
+
+
+
+
+.disabled{
+    
+    display: none;
+}
+.active {
+    display: flex;
+}
+
+
+
+.container_finale{
+    
+    position: relative;
+    
+}
+.container_Play-off_for_third_place{
+
+    flex-direction: column;
+
+    width: 300px;
+    grid-template-columns: auto;
+
+    right: 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    top: 50px;
+    left: 825px;
+
+}
+.container_all_of_Grup_osmina {
+    background: rgba(186, 189, 192, 0.37);
+    
+    column-gap: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    left: 500px;
+    width: 100%;
+    padding: 5px;
+    border: 1px black 
+}
+
+.container_all_of_Grup_cetvrt {
+    position: absolute;
+    column-gap: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    left: 270px;
+    border: 1px black;
+    top: 82px;
+    width: 71.6%;
+}
+
+.container_all_of_Grup_polu {
+
+    position: absolute;
+    column-gap: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    left: 535px;
+    width: 43.7%;
+    border: 1px black;
+    top: 120px;
+}
+.container_all_of_Grup_finale {
+    
+        column-gap: 50px;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        left: 745px;
+        border: 1px black;
+        top: 25px;
+}
+.contener_winer{
+    margin-bottom: 40px;
+}
+
+.title_finalist{
+    padding-bottom: 5px;
+    font-size: 24px;
+    font-weight: 800;
+    color: rgb(56, 55, 55);
+    position: relative;
+    top: -10px;
+    left: -17px;
+        
+}
+.title_third_place{
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(56, 55, 55);
+    position: relative;
+    top: 10px;
+    left: -17px;
+    
+}
+
+.container_all_of_Grup_za_trece1 {
+    
+    column-gap: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    left: 745px;
+    border: 1px black;
+    top: 240px;
+}
+
+
+
+
+
+
+.title_Sixth_final{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.all_tims {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+
+
+} 
+.container_grup{
+    width: 250px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border: 1px solid rgb(200, 187, 4);
+    
+}
+
+.Container_title {
+
+    position: relative;
+    height: 50px;
+    align-items: center;
+    background: rebeccapurple;
+    
+
+}
+.title{
+    display: none;
+}
+.Container_title>.title[aria-label="Round of 16"]:nth-of-type(1) {
+    /* Stilovi za prvi div */
+    
+    position: relative;
+    
+    
+    color: rgb(245, 245, 241);
+    left: 80px;
+    font-weight: 800;
+
+}
+.Container_title>.title[aria-label="Round of 16"]:nth-of-type(7) {
+    
+    /* Stilovi za prvi div */
+    position: relative;
+    color: rgb(245, 245, 241);
+    left: 85%;
+    font-weight: 800;
+
+}
+
+.Container_title>.title[aria-label="Quarter final"]:nth-of-type(6){
+    
+    /* Stilovi za prvi div */
+    position: absolute;
+    color: rgb(245, 245, 241);
+    left: 76.9%;
+    font-weight: 800;
+    
+}
+.Container_title>.title[aria-label="Quarter final"]:nth-of-type(2) {
+    
+    /* Stilovi za drugi div */
+
+    position: absolute;
+    color: rgb(245, 245, 241);
+    font-weight: 800;
+    left: 340px;
+    
+}
+
+.Container_title>.title[aria-label="Semi final"]:nth-of-type(3) {
+    /* Stilovi za prvi div */
+    position: absolute;
+    right: 110px;
+
+    color: rgb(245, 245, 241);
+    font-weight: 800;
+    left: 1180px;
+}
+
+.Container_title>.title[aria-label="Semi final"]:nth-of-type(5) {
+    /* Stilovi za drugi div */
+
+    position: absolute;
+    color: rgb(245, 245, 241);
+    font-weight: 800;
+    left: 620px;
+}
+
+.Container_title>.title[aria-label="Finalists"]:nth-of-type(4) {
+    /* Stilovi za drugi div */
+
+    position: absolute;
+    color: rgb(245, 245, 241);
+    font-weight: 800;
+    left: 850px;
+}
+
+
+
+
+
+.container_of_tims{
+    display: flex;
+    width: 250px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 70px;
+}
+.tim_container{
+    display: flex;
+
+}
+.container_of_tims_2 {
+    display: flex;
+    width: 250px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 10px;
+    
+}
+
+
+.team1 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+.team_container_of_point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Ovo postavlja visinu na visinu prozora preglednika */
+}
+.tim_container :nth-child(2).team_container_of_point{
+    position: relative;
+    top: 20px;
+    left: -10px;
+    width: 20px;
+    height: 35px;
+    
+    margin-right: 10px;
+
+}
+
+.tim_container :nth-child(4).team_container_of_point {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    width: 20px;
+    height: 35px;
+    
+    margin-left: 10px;
+}
+
+#tim_grup_of_point{
+    font-size: 20px;
+    text-align: center;
+}
+.penals_img{
+    background-size: cover;
+    width: 40px;
+    height: 30px;
+    position: relative;
+    top: 0;
+    
+}
+.container_penal_info:nth-child(1).team_penals{
+margin-left: 10px;
+}
+.container_penal_info:nth-child(3).team_penals {
+    margin-right: 10px;
+}
+
+
+.team {
+        margin: 20px;
+}
+#tim_grup_img_finale{
+    height:35px ;
+    border: 1px solid rgb(146, 145, 145);
+
+}
+.vs{
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15px;
+    font-size: 20px;
+}
+.vs1{
+    display: block;
+    position:absolute ;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25px;
+}
+.vs2 {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+}
+
+
+
+
+.container_of_tims.team:first-child #bodovi_kola-2_finale {
+    /* Vaši stilovi za prvi #bodovi_kola-2_finale idu ovde */
+    color: #151515;
+    position: absolute;
+    top: 20px;
+    left: 110px;
+    font-size: 25px;
+    
+}
+.container_of_tims .team:nth-child(3) #bodovi_kola-2_finale {
+    /* Vaši stilovi za treći #bodovi_kola-2_finale idu ovde */
+    color: #131313;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    font-size: 25px;
+}
+
+.name_of_cvalification{
+    
+    position: relative;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    margin: 10px;
+    transition: 0.3s;
+    background: rgba(134, 139, 77, 0.2);
+    border-radius: 10px;
+}
+.name_of_cvalification .naslov:first-child  {
+    /* Vaši stilovi za prvi #bodovi_kola-2_finale idu ovde */
+
+    position: absolute;
+    top: 20px;
+    left: 115px;
+    color: rgb(122, 122, 122);
+        /* Boja teksta */
+    font-size: 20px;
+        /* Veličina fonta */
+    font-weight: bold;
+        /* Podebljano */
+    
+}
+.name_of_cvalification .naslov:last-child {
+    /* Vaši stilovi za prvi #bodovi_kola-2_finale idu ovde */
+
+    position: absolute;
+    top: 20px;
+    right:100px;
+    color: rgb(122, 122, 122);
+    /* Boja teksta */
+    font-size: 20px;
+    /* Veličina fonta */
+    font-weight: bold;
+    /* Podebljano */
+}
+
+
+
+.name_of_cvalification .naslov:nth-child(2) {
+    /* Dodajte željeni stil za treći naslov ovdje */
+    /* Na primjer: */
+    font-weight: bold;
+    position: absolute;
+    color: rgb(122, 122, 122);
+    top: 20px;
+    left: 400px;
+/* Boja teksta */
+    font-size: 20px;
+    /* Veličina fonta */
+    font-weight: bold;
+    /* Podebljano */
+}
+
+/* Šesti naslov unutar .name_of_cvalification */
+.name_of_cvalification .naslov:nth-child(7) {
+    /* Dodajte željeni stil za treći naslov ovdje */
+    /* Na primjer: */
+    font-weight: bold;
+    position: absolute;
+    color: rgb(122, 122, 122);
+    top: 20px;
+    right:  400px;
+    /* Boja teksta */
+    font-size: 20px;
+    /* Veličina fonta */
+    font-weight: bold;
+    /* Podebljano */
+}
+
+
+
+.name_of_cvalification .naslov:nth-child(3) {
+    /* Dodajte željeni stil za treći naslov ovdje */
+    /* Na primjer: */
+    font-weight: bold;
+    position: absolute;
+    color: rgb(122, 122, 122);
+    top: 20px;
+    left: 725px;
+    /* Boja teksta */
+    font-size: 20px;
+    /* Veličina fonta */
+    font-weight: bold;
+    /* Podebljano */
+}
+
+/* Šesti naslov unutar .name_of_cvalification */
+.name_of_cvalification .naslov:nth-child(6) {
+    /* Dodajte željeni stil za treći naslov ovdje */
+    /* Na primjer: */
+    font-weight: bold;
+    position: absolute;
+    color: rgb(122, 122, 122);
+    top: 20px;
+    right: 730px;
+
+    /* Boja teksta */
+    font-size: 20px;
+    /* Veličina fonta */
+    font-weight: bold;
+    /* Podebljano */
+}
+
+.name_of_cvalification .naslov:nth-child(4) {
+    /* Dodajte željeni stil za treći naslov ovdje */
+    /* Na primjer: */
+    font-weight: bold;
+    position: absolute;
+    color: rgb(122, 122, 122);
+    top: 140px;
+    left: 905px;
+    /* Boja teksta */
+    font-size: 30px;
+    /* Veličina fonta */
+    font-weight: bold;
+    /* Podebljano */
+    
+}
+
+/* Šesti naslov unutar .name_of_cvalification */
+.name_of_cvalification .naslov:nth-child(5) {
+    /* Dodajte željeni stil za treći naslov ovdje */
+    /* Na primjer: */
+    font-weight: bold;
+    position: absolute;
+    color: rgb(122, 122, 122);
+    top:550px;
+    right: 870px;
+    
+    /* Boja teksta */
+    font-size: 30px;
+    /* Veličina fonta */
+    font-weight: bold;
+    /* Podebljano */
+}
+
+
+
+
+
+
+
+.tim_popup {
+    position: absolute;
+    width: 800px;
+    height: 400px;
+    top: 1000px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    /* Postavite boju pozadine prema potrebi */
+    border: 1px solid #ccc;
+    /* Dodajte okvir prema potrebi */
+    padding: 20px;
+    /* Dodajte odgovarajući prostor unutar elementa */
+    box-sizing: border-box;
+    /* Da biste uzeli u obzir padding u širini i visini */
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+
+}
+
+.popup {
+    position: relative;
+    display: grid;
+    top: 90px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    grid-template-columns: 1fr 1fr;
+    /* Dva stupca */
+    grid-template-rows: auto auto;
+    /* Dva reda */
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.contaner_of_tim {
+    display: flex;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 5px;
+
+}
+.contaner_tim_info{
+    display: flex;
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container_penal_tim {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+
+}
+
+.container_penal_info {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+    height: 25px;
+    background: rgb(189, 187, 187);
+    
+
+}
+
+
+.team_penals {
+    display: flex;
+    margin: 40px;
+    justify-content: space-around;
+    width: 50px;
+}
+
+.team_penals_name {
+
+    height: 20px;
+}
+
+.team_penals_gol {
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    border-radius: 20px;
+    background: red;
+    width: 20px;
+    border: none;
+    color: white;
+    font-weight: 200;
+        
+}
+
+.team_gl_1 {
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: #6f6f6f;
+    font-size: 20px;
+    margin: 15px;
+    position: relative;
+    top: -10px;
+    background: white;
+    border-radius: 20px;
+}
+
+.team_gl_2 {
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: #6f6f6f;
+    font-size: 20px;
+    margin: 15px;
+    position: relative;
+    top: -10px;
+    background: white;
+    border-radius: 20px;
+}
+
+
+
+#bodovi_kola-2_finale {
+    position: relative;
+    top: -7px;
+    padding: 10px;
+}
+
+.penalties{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.slika-klasa{
+    position: relative;
+    width: 49px;
+    height: 34px;
+    background-size: cover;
+}
+
+.info_tims{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Horizontalno centriranje */
+        align-items: center;
+}
+
+
+.container_of_gruop_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Horizontalno centriranje */
+    align-items: center;
+    /* Vertikalno centriranje */
+}
+
+.container_of_tims_info {
+    display: flex;
+    justify-content: center;
+    /* Horizontalno centriranje */
+    align-items: center;
+    border: 1px solid rgb(200, 187, 4);
+    width: 840px;
+    margin: 5px;
+    /* Vertikalno centriranje */
+}
+.container_of_tim_info {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 290px;
+
+}
+.div_bodovi{
+    width: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.output_stadium  {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.container_of_tims_info>.container_of_tim_info:first-child .div_bodovi {
+    position: relative;
+    right: -230px;
+    top: -105px;
+
+    font-size: 40px;;
+    color: #6f6f6f;
+}
+.container_of_tims_info>.container_of_tim_info:nth-of-type(3) .div_bodovi {
+    position: relative;
+    left: 10px;
+    top: -105px;
+
+    font-size: 40px;
+    color: #6f6f6f;
+    
+    
+}
+
+.output_tim {
+    margin: 0 auto;
+    
+    text-align: center;
+}
+.output_tim img {
+    width: 120px;
+    height: auto;
+    border:1px solid rgb(193, 159, 118);
+}
+
+.output_tim p {
+    font-size: 80%;
+    
+    padding: 10px;
+}
+
+.output_stadium img{
+    width: 120px;
+    
+}
+.output_stadium p {
+    font-size: 80%;
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    
+}
+
+.container_of_table {
+    margin: 20px;
+    position: relative;
+    left: -180px;
+    
+}
+
+.table_tims {
+    border-collapse: collapse;
+    width: 173%;
+    margin: 0 auto;
+    /* Centriramo tablicu */
+}
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.flex-container img {
+    margin-right: 5px;
+    /* Dodajemo razmak od 5px s desne strane broja */
+    align-self: flex-start;
+    /* Poravnanje slike prema vrhu */
+}
+
+.flex-container p {
+    margin-left: 5px;
+    /* Dodajemo razmak od 5px s lijeve strane slike */
+}
+
+.table_tims td {
+    border: 1px solid rgb(200, 187, 4);
+    /* Dodajemo okvir svakoj ćeliji */
+    text-align: center;
+    /* Centriramo sadržaj unutar svake ćelije */
+    padding: 10px;
+    /* Dodajemo malo prostora unutar ćelije */
+}
+
+.table_tims img {
+    display: block;
+    /* Postavljamo slike da budu blok elementi kako bi mogle imati margin auto za centriranje */
+    margin-left: 10px;
+    border: 1px solid rgb(193, 159, 118);;
+    /* Centriramo slike unutar ćelija */
+}
+.close-button {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    /* Ostali stilovi za .close-button */
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+    
+            width: 100%;
+            background: rgb(56, 55, 55);
+            position: fixed;
+            text-align: center;
+            text-decoration: none;
+            height: 70px;
+            justify-content: center;
+            align-items: center;
+            z-index: 101;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            z-index: 9999;
+    }
+    .main-hede {
+            display: flex;
+            height: 40px;
+            justify-content: space-around;
+            align-items: center;
+            align-items: center;
+            text-align: center;
+    
+        }
+    .Title {
+        font-size: 30px;
+        color: #b0afaf;
+        width: 190px;
+
+    }
+
+    .container_svih_timova {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 2px;
+        margin-top: 70px;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        perspective: 10000px;
+        background: none;
+    }
+    .container_tim_grupe_F:active {
+        box-shadow: 5px 25px 46px -16px rgba(141, 13, 13, 0.172);
+        transition: 0.5s;
+    }
+
+    .container_tim_grupe_F.flip {
+
+        transform: rotateY(180deg);
+        box-shadow: rgba(0, 0, 0, 0.552) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+
+    .container_tim_grupe_F.flip:hover {
+        transform: rotateY(180deg);
+        box-shadow: 5px 20px 40px -16px rgba(30, 28, 28, 0.797);
+    }
+    .container_tim_grupe_F {
+        position: relative;
+        border-radius: 10px;
+        width: 80px;
+        height: 54px;
+        transform: scale(1);
+        transform-style: preserve-3d;
+        transition: 0.5s;
+        
+    }
+    #front_face {
+        border-radius: 5px;
+        position: absolute;
+        width: 80px;
+        border: 0.5px solid rgba(177, 174, 174, 0.152);
+        background-size: cover;
+        backface-visibility: hidden;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 2;
+        cursor: pointer;
+    }
+    #back_face {
+        position: relative;
+            height: 60px;
+            justify-content: center;
+                align-items: center;
+                text-align: center;
+                z-index: 2;
+                border-radius: 5px;
+                border: 0.5px solid rgba(177, 174, 174, 0.152);
+                padding-top: 20%;
+                height: 58px;
+                width: 100%;
+    }
+
+        .container_all_of_Grup {
+            display: grid;
+            grid-template-columns: auto auto;
+            padding-top: 50px;
+            grid-gap: 5px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 10px;
+            height: 1410px;
+            background: none;
+        
+        }
+
+        .containet_of_Grup {
+            position: relative;
+            display: block;
+            flex-direction: column;
+            width: 200px;
+            height: 300px;
+            border: 1px solid rgb(164, 163, 162);
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+        .containet_of_Grup:hover {
+            transition: 0.5s;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            opacity: 1;
+            background: rgba(160, 159, 155, 0.794);
+        }
+        .container_tims_of_grup {
+            position: absolute;
+            display: grid;
+            flex-direction: auto;
+            padding: 2px;
+            margin: 5px;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+        .container_of_tim {
+            position: relative;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 170px;
+            height: 40px;
+            transition: 0.3s;
+            float: left;
+        }
+        .name_of_grup_button {
+            display: inline;
+            width: 100px;
+            height: 40px;
+            border-radius: 5px;
+            background: rgb(240, 7, 7);
+            box-shadow: rgba(134, 131, 131, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .name_of_grup_button::after {
+            content: '';
+            display: block;
+            width: 170px;
+            border-bottom: 5px solid rgb(255, 254, 254);
+            position: absolute;
+            top: 54px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        #tim_grup_img {
+            position: absolute;
+            width: 40px;
+            background-size: cover;
+            margin-bottom: 5px;
+            transition: 0.1s;
+            margin: 10px;
+        }
+        #tim_grup_img:hover {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            transform: scale(1.3)
+        }
+        #tim_grup_slovo {
+            position: absolute;
+            display: block;
+            left: 60px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-weight: 400;
+            font-size: 15px;
+        }
+        #tim_grup_slovo span {
+            font-weight: 600;
+            font-size: 20px;
+            color: brown;
+        }
+        #tim_img_ball {
+            position: absolute;
+            display: block;
+            width: 30px;
+            height: 40px;
+            right: 5px;
+            background-size: cover;
+            background-image: url("Image of tim/ball.png");
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            z-index: 1;
+        }
+        .container_of_result {
+            position: absolute;
+            display: grid;
+            height: 40px;
+            width: 50px;
+            grid-template-columns: auto  ;
+            grid-gap: 10px;
+            right: 0px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .red {
+            position: relative;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 170px;
+            height: 45px;
+            margin: 5px;
+            transition: 0.3s;
+            float: left;
+            border: 1px solid red;
+            border-radius: 10px;
+        }
+        .red:hover{
+            background: white;
+        }
+        .blue {
+            position: relative;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 170px;
+            height: 45px;
+            margin: 5px;
+            transition: 0.3s;
+            border: 1px solid rgb(234, 255, 0);
+            float: left;
+            border-radius: 10px;
+
+        }
+        .blue:hover {
+            background: white;
+        }
+        .container_finale {
+            flex-direction: column;
+        }
+        
+        .team_penals {
+            display: flex;
+            margin: 20px;
+            justify-content: space-around;
+            width: 50px;
+        }
+
+        .team_penals_gol {
+            justify-content: center;
+            align-items: center;
+            height: 20px;
+            border-radius: 20px;
+            background: red;
+            width: 20px;
+            border: none;
+            color: white;
+            font-weight: 200;
+
+        }
+
+            
+
+        #tim_grup_img_finale {
+            height: 25px;
+            border: 1px solid rgb(146, 145, 145);
+
+        }
+        #bodovi_kola-2_finale{
+            position: relative;
+            top: -10px;
+            padding: 5px;
+            right: 5px;
+            padding: 10px;
+
+        }
+        .tim_container :nth-child(2).team_container_of_point {
+            position: relative;
+            top: 20px;
+            left: -10px;
+            width: 20px;
+            height: 35px;
+            margin-right: 10px;
+
+        }
+
+        .tim_container :nth-child(4).team_container_of_point {
+            position: relative;
+            top: 20px;
+            left: 10px;
+            width: 20px;
+            height: 35px;
+            margin-left: 10px;
+        }
+        .disabled {
+
+            display: none;
+        }
+
+        .container_all_of_Grup_osmina {
+            
+            background: rgba(186, 189, 192, 0.37);
+            column-gap: 50px;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            left: 500px;
+            width: 100%;
+            padding: 5px;
+            height: 100%;
+            border: 1px solid rgb(164, 163, 162);
+
+            
+        }
+        .container_all_of_Grup_cetvrt{
+            
+            position: absolute;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            left: 0;
+            background: rgba(186, 189, 192, 0.37);
+            border: 1px solid rgb(164, 163, 162);
+            top: 520px;
+            width: 100%;
+                
+
+        }
+        .container_all_of_Grup_polu {
+            
+
+            position: relative;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            left: 0px;
+            border: 1px solid rgb(164, 163, 162);
+            width: 100%;
+            top: 400px;
+            background: rgba(186, 189, 192, 0.37);
+            height: 100%;
+            
+            
+            
+        }
+
+        .container_Play-off_for_third_place {
+            
+            
+            position: relative;
+            flex-direction: column;
+            width: 100%;
+            grid-template-columns: auto;
+            border: 1px solid rgb(164, 163, 162);
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            top: 480px;
+            left: 0px;
+            background: rgba(186, 189, 192, 0.37);
+        }
+    
+        .container_all_of_Grup_finale {
+            
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            left: 12px;
+            border: 1px black;
+            top: 0;
+            position: relative;
+        }
+
+        .container_all_of_Grup_za_trece1 {
+            
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            left: 12px;
+            top: -20px;
+            border: 1px black;
+            position: relative;
+        }
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .container_grup {
+            width: 190px;
+            height: auto;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            margin: 5px;
+        
+
+        }
+        .container_of_tims {
+            display: flex;
+            width: 190px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 70px;
+            border: 1px solid rgb(200, 187, 4);
+            background: rgba(165, 165, 164, 0.374);
+        }
+        .container_of_tims_2 {
+            display: flex;
+            width: 190px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+        }
+
+        .active {
+            display: flex;
+        }
+        .container_finale {
+            position: relative;
+            
+        }
+        .title_third_place {
+            padding-bottom: 5px;
+            font-size: 20px;
+            font-weight: 800;
+            color: rgb(56, 55, 55);
+            left: 11px;
+            top: -10px;
+            
+        }
+
+        .title_finalist {
+            padding-bottom: 5px;
+            font-size: 20px;
+            font-weight: 800;
+            color: rgb(56, 55, 55);
+            left: 11px;
+            top: 5px;
+        }
+
+    
+
+
+
+
+
+
+
+
+
+
+            
+
+
+        .container-tim-players {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            background: #f4eeda;
+            z-index: 99;
+            width: 100%;
+        }
+
+        .button_category {
+            width: 35px;
+            height: 35px;
+            background: #3e3c3c;
+            font-size: 10px;
+        }
+
+        .button_category:hover {
+            background: #e80606;
+        }
+
+
+
+        .container-goalkeeper {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            gap: 5px;
+        }
+
+        .container-defender {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+    
+            gap: 5px;
+
+        }
+        .container-forward {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            gap: 5px;
+        }
+
+        .container-midfielder {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            gap: 5px;
+
+        }
+
+        .container-manager {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            gap: 5px;
+        }
+
+        .container-tim-players img,
+        .container-goalkeeper img,
+        .container-defender img,
+        .container-forward img,
+        .container-midfielder img,
+        .container-manage img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .tim {
+        display: flex;
+        color: #fff;
+        font-size: 50px;
+        font-weight: 900;
+        background: rebeccapurple;
+        height: 70px;
+        }
+
+        .img-flag {
+
+            position: relative;
+            top: 0px;
+            left: 15px;
+            width: 100px;
+        }
+
+        .p-ime {
+            position: relative;
+            color: white;
+            font-size: 30px;
+            font-weight: 900;
+            top: 10px;
+            left: 60px;
+            overflow: hidden;
+                /* Skrivanje dodatnih slova */
+                white-space: nowrap;
+                /* Onemogućavanje prelaska u novi red */
+                text-overflow: ellipsis;
+        }
+
+                .button_category {
+                    top: 35px;
+                    transform: translate(50%, -50%);
+                    
+                    position: relative;
+                    font-size: 30px;
+                    font-weight: bold;
+                    transition: font-size 0.3s ease;
+                    
+                    height: 60px;
+                    width: 20%;
+                    left: 70px;
+                }
+
+
+        .goalkeeper,
+        .defender,
+        .forward,
+        .midfielder,
+        .manager {
+            display: block;
+            border: 2px solid rgb(200, 187, 4);
+            border-radius: 5px;
+            background: #f7f7f7;
+            margin: 20px;
+            text-align: center;
+        }
+
+
+        .flagImage {
+            width: 20px;
+            background-size: cover;
+            position: relative;
+            top: 5px;
+            left: 20px;
+            display: block;
+        }
+
+        .category_players {
+            display: inline-block;
+            padding: 5px;
+            border-top: 1px solid #e1ca0b;
+            width: 150px;
+            font-size: 10px;
+            font-weight: 300;
+        }
+
+
+        .info_tims {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* Horizontalno centriranje */
+            align-items: center;
+        }
+
+        .container_of_gruop_info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+        }
+        .container_of_tims_info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgb(215, 123, 11);
+            width: 405px;
+            margin: 5px;
+        
+        }
+                
+        
+                
+        
+        .container_of_tims_info>.container_of_tim_info:first-child .div_bodovi {
+            position: relative;
+            right: -130px;
+            top: -85px;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            font-size: 30px;
+            color: #6f6f6f;
+            width: 30px;
+        }
+
+        .container_of_tims_info>.container_of_tim_info:nth-of-type(3) .div_bodovi {
+            position: relative;
+            left: -9px;
+            top: -85px;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            font-size: 30px;
+            color: #6f6f6f;
+            width: 30px;
+        }
+        .output_tim {
+            margin: 0 auto;
+            text-align: center;
+        }
+        .output_tim img {
+            width: 80px;
+            height: auto;
+            border: 1px solid rgb(193, 159, 118);
+        }
+        .output_tim p {
+            font-size: 80%;
+            padding-top: 10px;
+        }
+        .output_stadium img {
+            width: 100px;
+
+        }
+        .output_stadium p {
+            font-size: 80%;
+            padding-bottom: 10px;
+        }
+
+        .container_of_table {
+            margin: 20px;
+            position: relative;
+            left: -20px;
+            
+
+        }
+
+        .container_of_table {
+            margin: 30px;
+        }
+
+        .table_tims {
+            border-collapse: collapse;
+            width: 111%;
+            margin: 0 auto;
+            /* Centriramo tablicu */
+        }
+
+        .table_td {
+            padding: 4px;
+            font-size: 12px;
+            /* Prilagodite veličinu fonta prema potrebi */
+        }
+
+        
+        .table_tims td { 
+            width: 30.6px;
+            border: 1px solid rgb(215, 123, 11);
+            padding: 3.2px;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            width: 150px;
+        }
+        .flex-container img {
+            margin-right: 5px;
+            align-self: flex-start;
+        }
+        .flex-container p {
+            margin-left: 0px;
+        }
+        .table_tims tr {
+            border: 1px solid rgb(20, 195, 26);
+            text-align: center;
+        
+        }
+        .teble_tims td.table_td:first-child {
+            text-align: center;
+            padding: 6px;
+            width: 150px;
+        }
+        .table_tims img {
+            display: block;
+            margin-left: 10px;
+            border: 1px solid rgb(193, 159, 118);
+            ; 
+        }
+        .close-button {
+            position: relative;
+            top: 20px;
+            right: 0;
+        }
+
+
+        .title_Sixth_final {
+            display: block;
+            padding-bottom: 20px;
+            font-size: 30px;
+            color: rgb(134, 129, 129);
+            font-weight: 600;
+        }
+    
+
+
+        .contener_winer {
+            margin-bottom: 40px;
+        }
+
+
+
+
+}
+
+
+
+
+
+

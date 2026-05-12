@@ -1,0 +1,159 @@
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="cup.css">
+
+        <title>World Cup </title>
+    </head>
+
+    <body>
+
+        <header class="container">
+            <div class="main-hede">
+        
+                <h1 class="Title">World Cup</h1>
+                <nav class="nav">
+                    <ul>
+                        <button class="start btn" onclick="navigateToDiv('.container_all_of_tims')"><a href="#start"></a>START</button>
+                        <button class="Grupa  btn disabled"
+                        onclick="navigateToDiv('.container_all_of_Grup')"
+                        aria-label="Grupa"><a href="#Grupa"></a>GROUP</button>
+
+                        <button class="Prvo_kolo btn disabled"onclick="navigateToDiv('.container_all_of_Grup')"  aria-label="I"><a href="#Kol1" class="nav-link"></a>Round I</button>
+
+                        <button class="Drugo_kolo btn disabled" onclick="navigateToDiv('.container_all_of_Grup')" aria-label="II" ><a href="#Kol2" ></a>Round II</button>
+
+                        <button class="Trece_kolo btn disabled" onclick="navigateToDiv('.container_all_of_Grup')"  aria-label="III"><a href="#Kol3" class="nav-link"></a>Round III</button>
+
+
+                        <button class="VIII btn disabled" onclick="navigateToDiv('.container_all_of_Grup_osmina')"aria-label="Round of 16"></a>Round of 16</button>
+
+                        <button class="VIII_bodovi btn disabled " onclick="navigateToDiv('.container_all_of_Grup_cetvrt')"
+                        aria-label="Quarter final"><a href="#Kolo"class="nav-link"></a>Quarter final</button>
+
+                        <button class="IV_bodovi btn disabled " onclick="navigateToDiv('.container_all_of_Grup_polu')" aria-label="Semi final"><a href="#Kolo" class="nav-link" ></a>Semi final</button>
+
+                        <button class="II_bodovi btn disabled " onclick="navigateToDiv('.container_Play-off_for_third_place')"aria-label="Finalists"><a href="#Kolo" class="nav-link"></a>Finalists</button>
+
+                        <button class="FINALE btn disabled" onclick="navigateToDiv('.container_Play-off_for_third_place')"aria-label="End"><a href="#Kolo" class="nav-link"></a>End</button>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    
+
+
+
+
+
+
+        <div class="container_all_of_tims">
+        </div>
+
+
+        <div class="container_all_of_Grup">
+        </div>
+        <div class="info_tims">
+        </div>
+        <div class="info_players">
+        </div>
+
+        
+        
+        
+        
+        
+
+        
+        
+        <div class="Container_title disabled">
+            <div class="title" aria-label="Round of 16"  >
+                <p>Round of 16</p>
+            </div>
+            <div class="title" aria-label="Quarter final">
+                <p>Quarter final</p>
+            </div>
+            <div class="title" aria-label="Semi final">
+                <p>Semi final</p>
+            </div>
+            <div class="title" aria-label="Finalists">
+                <p>Play-off for third place</p>
+            </div>
+            <div class="title" aria-label="Semi final">
+                <p>Semi final</p>
+            </div>
+            <div class="title" aria-label="Quarter final">
+                <p>Quarter final</p>
+            </div>
+            <div class="title" aria-label="Round of 16">
+                <p>Round of 16</p>
+            </div>
+        </div>
+        
+        
+        
+    
+
+        <div class="container_finale ">
+            <div class="container_all_of_Grup_osmina ">
+            </div>
+
+            <div class="container_all_of_Grup_osmina_bodovi ">
+            </div>
+
+            <div class="container_all_of_Grup_cetvrt ">
+            </div>
+
+            <div class="container_all_of_Grup_cetvrt_bodovi  ">
+            </div>
+
+            <div class="container_all_of_Grup_polu ">
+            </div>
+
+            <div class="container_all_of_Grup_polu_bodovi ">
+            </div>
+
+
+            <div class="container_Play-off_for_third_place ">
+                <div class="container_all_of_Grup_finale">
+                </div>
+                <div class="container_all_of_Grup_finale_bodovi">
+                </div>
+                <div class="container_all_of_Grup_za_trece1">
+                </div>
+                <div class="container_all_of_Grup_za_trece_bodovi">
+                </div>
+            </div>
+        </div>
+    
+
+        
+
+
+
+
+
+
+
+
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+
+    <script src="cup.js"></script>
+
+
+</html>
+
+
+
