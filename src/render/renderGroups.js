@@ -9,7 +9,11 @@ export function renderGroupTable(groupName, teams) {
             (team) => `
               <div class="container_of_tim">
                 <img id="tim_grup_img" src="${team.slika}" alt="${team.ime}">
-                <p id="tim_grup_slovo">${team.ime}</p>
+                <p id="tim_grup_slovo">
+                  ${team.ime}
+                  <br>
+                  <span>${team.info.Pts}</span>
+                </p>
               </div>
             `
           )
