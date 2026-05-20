@@ -3293,7 +3293,7 @@ export const teams = [
         id: 24,
         grupa: "Ggrupa",
         ime: "Serbia",
-        slika: "Image of tim/SRB.png",
+        slika: "Serbia.svg.webp",
         bodovi: "Image of tim/ball.png",
         players: {
             Goalkeeper: [
