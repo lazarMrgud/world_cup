@@ -14,5 +14,6 @@ export const selectors = {
     playersContainer: document.querySelector(".info_players"),
     teamsInfoContainer: document.querySelector(".info_tims"),
     qualificationTitle: document.querySelector(".name_of_cvalification"),
-    titles: document.querySelectorAll(".naslov")
+    titles: document.querySelectorAll(".naslov"),
+    allTeamsContainer: document.querySelector(".container_all_of_tims"),
 };
